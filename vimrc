@@ -26,28 +26,28 @@ set relativenumber
 imap jj <esc>
 
 "header files for python, c, cpp, prolog
-autocmd bufnewfile *.py so /home/adam/Templates/py_header.txt
+autocmd bufnewfile *.py so /home/adam.loo/Templates/py_header.txt
 autocmd bufnewfile *.py exe "2," . 12 . "g/File        :.*/s//File        : " .expand("%")
 autocmd bufnewfile *.py exe  "2," . 12 . "g/Created     :.*/s//Created     : " .strftime("%d-%m-%Y")
 autocmd Bufwritepre,filewritepre *.py execute "normal ma"
 autocmd Bufwritepre,filewritepre *.py exe "2," . 12 . "g/Last Edited :.*/s//Last Edited : " .strftime("%c")
 autocmd bufwritepost,filewritepost *.py execute "normal 'a"
 
-autocmd bufnewfile *.c so /home/adam/Templates/c_header.txt
+autocmd bufnewfile *.c so /home/adam.loo/Templates/c_header.txt
 autocmd bufnewfile *.c exe "2," . 12 . "g/File        :.*/s//File        : " .expand("%")
 autocmd bufnewfile *.c exe  "2," . 12 . "g/Created     :.*/s//Created     : " .strftime("%d-%m-%Y")
 autocmd Bufwritepre,filewritepre *.c execute "normal ma"
 autocmd Bufwritepre,filewritepre *.c exe "2," . 12 . "g/Last Edited :.*/s//Last Edited : " .strftime("%c")
 autocmd bufwritepost,filewritepost *.c execute "normal 'a"
 
-autocmd bufnewfile *.cpp so /home/adam/Templates/c_header.txt
+autocmd bufnewfile *.cpp so /home/adam.loo/Templates/c_header.txt
 autocmd bufnewfile *.cpp exe "2," . 12 . "g/File        :.*/s//File        : " .expand("%")
 autocmd bufnewfile *.cpp exe  "2," . 12 . "g/Created     :.*/s//Created     : " .strftime("%d-%m-%Y")
 autocmd Bufwritepre,filewritepre *.cpp execute "normal ma"
 autocmd Bufwritepre,filewritepre *.cpp exe "2," . 12 . "g/Last Edited :.*/s//Last Edited : " .strftime("%c")
 autocmd bufwritepost,filewritepost *.cpp execute "normal 'a"
 
-autocmd bufnewfile *.pl so /home/adam/Templates/c_header.txt
+autocmd bufnewfile *.pl so /home/adam.loo/Templates/c_header.txt
 autocmd bufnewfile *.pl exe "2," . 12 . "g/File        :.*/s//File        : " .expand("%")
 autocmd bufnewfile *.pl exe  "2," . 12 . "g/Created     :.*/s//Created     : " .strftime("%d-%m-%Y")
 autocmd Bufwritepre,filewritepre *.pl execute "normal ma"
